@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.banner-head { 
+    position:relative;
+}
+.banner-head img {
+    width: 100%;
+}
+.banner-head-text {
+    display:block;
+    position:absolute;
+    text-align: center;
+    top:70px;
+    width:100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    color:#fff;
+}
+.banner-head h2 {
+    font-size: 3vw;
+}
+.banner img {
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.cars {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.cars h3 {
+    font-size: 44px;
+}
+.cars p {
+    font-size: 14px;
+}
+.cars a {
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+.cars a:hover {
+    color: #9b0000;
+}
+.cars img {
+    width: 100%;
+}
+.cars div {
+    width: 24.6%;
+    display: inline-block;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.description {
+    width: 100%;
+    background-color: white;
+    margin-top: -4px;
+    color: black;
+}
+.description p {
+    font-size: 16px;
+    padding: 0 60px 15px 60px;
+}
+.description h3, .technology {
+    font-size: 44px;
+    padding-top: 5px;
+    padding-left: 60px;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.power-mobile h3 {
+    font-size: 30px;
+    padding-top: 5px;
+}
+.power-mobile p {
+    font-size: 16px;
+}
+.specifications p {
+    font-size: 16px;
+    color: black
+}
+.specifications p:hover {
+    color: red;
+}
+.power-mobile, .specifications {
+    padding: 0 60px 20px 60px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.specifications {
+    grid-template-columns: repeat(3, 1fr);
+}
+.specifications span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.power-mobile img {
+    border-radius: 3vh;
+}
+hr {
+    margin: 0 60px 0 60px;
+    border: 0.5px solid black;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.connection h3 {
+    font-size: 44px;
+    text-align: center;
+}
+.connection form {
+    color: rgb(71, 71, 71);
+    margin: 0 auto;
+    width: 702px;
+    font-size: 16px;
+}
+input {
+    height: 40px;
+    width: 340px;
+    margin-bottom: 20px;
+}
+input:first-of-type {
+    margin-right: 18px;
+}
+.form-inputs {
+    display: flex;
+}
+textarea {
+    width: 700px;
+    resize: none;
+}
+input, textarea {
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 2px;
+}
+.form-button input{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.form-button {
+    text-align: center;
+}
+.form-button input:hover {
+    color: red;
+}
+.red {
+    color: red;
+}
+/* ------------------------------------------------------------------------------------------------ */
+@media (min-width: 980px) {
+    .cars img {
+        border-bottom: 2px solid white;
+    }
+    .cars img:hover {
+        border-bottom: 2px solid black;
+    }
+    .power-mobile div {
+        border-top: 2px solid white;
+    }
+    .power:hover, .mobile:hover {
+        border-top: 2px solid black;
+    }
+}
+@media (max-width: 980px) and (min-width: 639px) {
+    .cars div {
+        width: 48%;
+        display: inline-block;
+    }
+    .cars h3, .description h3, .technology {
+        font-size: 24px;
+        padding-left: 30px;
+    }
+    .power-mobile h3{
+        font-size: 20px;
+    }
+    .cars p {
+        font-size: 14px;
+    }
+    .description p {
+        padding: 0 30px 30px 30px;
+        font-size: 14px;
+    }
+    .power-mobile p, .specifications p {
+        font-size: 14px;
+    }
+    .power-mobile, .specifications {
+        padding: 0 30px 20px 30px;
+    }
+    .specifications span {
+        font-size: 16px;
+    }
+    .connection h3 {
+        font-size: 24px;
+    }
+    .connection form {
+        width: 560px;
+        margin: 0 auto;
+    }
+    textarea {
+        max-width: 560px;
+    }
+    input {
+        max-width: 270px;
+    }
+}
+@media (max-width: 639px) {
+    .cars div {
+        width: 80%;
+        display: inline-block;
+    }   
+    .cars {
+        width: 100%;
+    }
+    .cars h3, .description h3, .technology {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .power-mobile h3 {
+        font-size: 18px;
+    }
+    .cars p {
+        font-size: 12px;
+    }
+    .description p {
+        padding: 0 20px 20px 20px;
+        font-size: 12px;
+    }
+    .power-mobile p, .specifications p {
+        font-size: 12px;
+    }
+    .power-mobile {
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px 20px;
+    }
+    .specifications {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px 20px 20px;
+    }
+    .specifications span {
+        font-size: 14px;
+    }
+    .connection h3 {
+        font-size: 22px;
+    }
+    .connection form {
+        width: 480px;
+        margin: 0 auto;
+    }
+    textarea {
+        max-width: 480px;
+    }
+    input {
+        max-width: 230px;
+    }
+}

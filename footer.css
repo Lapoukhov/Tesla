@@ -1,0 +1,99 @@
+footer {
+    background-color: black;
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    padding: 15px;
+}
+
+footer hr {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    border: 0.5px solid white;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+footer a {
+    color:white;
+    text-decoration-line: none;
+}
+
+table {
+    display: inline;
+    margin: 50px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table th {
+    border-bottom:1px solid white;
+    font-weight: normal;
+}
+
+.model td {
+    padding-top: 16px;
+}
+
+.model a:hover {
+    color: #9b0000;
+}
+
+.youtube img:hover, .instagram img:hover, .twitter img:hover, .facebook img:hover {
+    border-radius: 9px;
+}
+.youtube img:hover {
+    background-color: red;
+}
+.youtube:hover {
+    color: red;
+}
+.instagram img:hover {
+    background-color: rgb(255, 93, 220);
+}
+.instagram:hover {
+    color: rgb(255, 93, 220);
+}
+.twitter img:hover {
+    background-color: rgb(0, 217, 255);
+}
+.twitter:hover {
+    color: rgb(0, 217, 255);
+}
+.facebook img:hover {
+    background-color: rgb(47, 54, 143);
+}
+.facebook:hover {
+    color: rgb(47, 54, 143);
+}
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 980px) and (min-width: 639px) {
+    footer {
+        font-size: 12px;
+    }
+    footer img {
+        width: 25px;
+        height: 25px;;
+    }
+}
+
+@media (max-width: 639px) {
+    footer {
+        font-size: 12px;
+    }
+    footer img {
+        width: 25px;
+        height: 25px;;
+    }
+}
